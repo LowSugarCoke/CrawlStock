@@ -28,7 +28,6 @@ def get_yahoo_news2(stock: str, target_page: int):
 
     # 選取標題的tag來使用，讀者自行練習的時候應該會發現有許多tag可以使用，基本上可以使用就可以，未必要跟我的一樣
     all_news = soup.find_all('h3', {'class': 'Mt(0) Mb(8px)'})
-    print(len(all_news))
 
     # 創建空list儲存每一篇新聞的連結
     all_news_store = []

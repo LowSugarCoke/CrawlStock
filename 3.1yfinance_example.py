@@ -11,8 +11,14 @@ print(major_holders)
 ins_holders = stock.institutional_holders
 print(ins_holders)
 
+# 損益表
 fin_data = stock.financials
 print(fin_data)
 
+# 資產負債表
 balance_data = stock.balance_sheet
 print(balance_data)
+
+# 現金流量表
+cf_data = stock.cashflow
+print(cf_data)
